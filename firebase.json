@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "hola_mundo",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

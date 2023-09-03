@@ -1,0 +1,32 @@
+<form>
+    <h2>Modificar registro</h2>
+    <section>
+        <div>
+            <label for="codigo">Codigo:</label>
+            <input id="codigo" type="text" [(ngModel)]="registro.codigo" name="codigo">
+        </div>
+        <div>
+            <label for="fecha">Fecha:</label>
+            <input id="fecha" type="date" [(ngModel)]="registro.fecha" name="fecha">
+        </div>
+        <div>
+            <label for="cliente">Cliente:</label>
+            <input id="cliente" type="text" [(ngModel)]="registro.cliente" name="cliente">
+        </div>
+        <div>
+            <label for="tipo_Interacion">Tipo de interacion:</label>
+            <select [(ngModel)]="registro.tipo_Interacion" name="tipo_Interacion">
+                    <option value = "" name = "tipo_Interacion"></option>
+                    <option value = "telefono fijo" name = "tipo_Interacion">telefono fijo </option>
+                    <option value = "celular" name = "tipo_Interacion">celular</option>
+                    <option value = "ws" name = "tipo_Interacion">ws</option>
+                    <option value = "instagram" name = "tipo_Interacion">instagram</option>
+                    <option value = "fb" name = "tipo_Interacion">fb</option>
+                </select>
+        </div>
+
+
+        <button (click)="updateRegistro()">Guardar</button>
+
+    </section>
+</form>

@@ -1,0 +1,21 @@
+<h1>Heroes <small>Marvel y DC</small></h1>
+<hr>
+<div class="col animated fadeIn fast" *ngFor="let registro of registros | busqueda:registro_servicio.busqueda">
+
+
+    <div class="card mb-3 " style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">{{registro.codigo}}</h5>
+                    <p class="card-text">{{registro.fecha}}</p>
+                    <p class="card-text"><small class="text-body-secondary">{{registro.cliente}}</small></p>
+                    <p class="card-text"><small class="text-body-secondary">{{registro.tipo_Interacion}}</small></p>
+                    <p class="card-text"><small class="text-body-secondary">{{registro.descripcion}}</small></p>
+                    <button type="button" class="text-body-secondary" (click)="modificarRegistro(registro)">Modificar</button>
+                    <button type="button" class="text-body-secondary" (click)="eliminarRegistro(registro)">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "examen-50544": {
+      "hosting": {
+        "hola_mundo": [
+          "examen-50544"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "examen-50544"
+  }
+}
